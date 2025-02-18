@@ -4,6 +4,7 @@ Description=Database Backup Archive Timer
 [Timer]
 OnCalendar=*-*-*/3
 Persistent=true
+Unit=dbackup-archive.service
 
 [Install]
 WantedBy=timers.target

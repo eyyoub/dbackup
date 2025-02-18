@@ -22,6 +22,7 @@ chmod 755 /usr/local/bin/dbackup.sh
 # Copy service and timer files
 cp dbackup.service /etc/systemd/system/
 cp dbackup.timer /etc/systemd/system/
+cp dbackup-archive.service /etc/systemd/system/
 cp dbackup-archive.timer /etc/systemd/system/
 
 # Reload systemd

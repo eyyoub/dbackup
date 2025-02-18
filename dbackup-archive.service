@@ -1,0 +1,12 @@
+[Unit]
+Description=Database Backup Archive Service
+After=mysql.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/dbackup.sh archive
+User=dbackup
+Group=dbackup
+
+[Install]
+WantedBy=multi-user.target
