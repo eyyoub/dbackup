@@ -1,0 +1,12 @@
+[Unit]
+Description=Database Backup Service
+After=mysql.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/dbackup.sh backup
+User=dbackup
+Group=dbackup
+
+[Install]
+WantedBy=multi-user.target
